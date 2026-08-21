@@ -1,0 +1,13 @@
+export const MAX_TITLE = 120;
+export const MAX_TEXT = 2000;
+export const MIN_NODE_W = 96;
+export const MIN_NODE_H = 40;
+export const MAX_NODE_W = 420;
+export const MAX_NODE_H = 280;
+export const DEFAULT_W = 176;
+export const DEFAULT_H = 48;
+export const CHILD_GAP_X = 72;
+export const CHILD_GAP_Y = 20;
+export const MAX_TOPICS = 400;
+export const MAX_LINKS = 800;
+export const SAMPLE_TITLE_PREFIX = "SAMPLE:";
