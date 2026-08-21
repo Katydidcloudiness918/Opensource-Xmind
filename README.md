@@ -50,7 +50,7 @@ Download the installer from the [Releases](../../releases) page and run it on Wi
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/opensource-xmind.git
+git clone https://github.com/MAINMMTTMAIN/opensource-xmind.git
 cd opensource-xmind
 
 # 2. Copy default environment config
