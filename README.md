@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**یک ابزار مایند مپ رایگان و متن‌باز، الهام‌گرفته از Xmind**
+**A free, open-source mind mapping app inspired by Xmind**
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
@@ -13,124 +13,124 @@
 
 ---
 
-## 📥 دانلود
+## 📥 Download
 
-برای دانلود مستقیم نسخه ویندوز، به بخش [Releases](../../releases) مراجعه کنید و آخرین فایل `Opensource Xmind Setup x.x.x.exe` را دانلود و اجرا کنید.
-
----
-
-## ✨ ویژگی‌ها
-
-- **ساخت مایند مپ** با افزودن تاپیک، زیر‌تاپیک و ارتباط بین تاپیک‌ها
-- **ویرایش متن** با دابل‌کلیک روی هر تاپیک
-- **۴ تم گرافیکی**: Default، Dark، Ocean، Sunset
-- **جابجایی صفحه** با نگه داشتن `Space` و درگ کردن
-- **زوم** با اسکرول موس
-- **ذخیره خودکار** در IndexedDB مرورگر (بدون نیاز به اینترنت)
-- **اکسپورت** به فرمت‌های JSON، SVG و PNG (با رنگ‌های تم انتخابی)
-- **ایمپورت** از JSON (برای بازیابی نسخه پشتیبان)
-- **Undo / Redo** کامل
-- **اجرا به صورت دسکتاپ** (Electron) یا **در مرورگر** (localhost)
+To download the latest Windows installer, go to the [Releases](../../releases) page and download `Opensource Xmind Setup x.x.x.exe`.
 
 ---
 
-## 🖥️ اجرا به صورت دسکتاپ
+## ✨ Features
 
-فایل نصبی را از بخش [Releases](../../releases) دانلود کنید.
+- **Create mind maps** by adding topics, sub-topics, and connections
+- **Rename topics** by double-clicking on them
+- **4 visual themes**: Default, Dark, Ocean, Sunset
+- **Pan the canvas** by holding `Space` and dragging
+- **Zoom** with the mouse wheel
+- **Auto-save** to local IndexedDB (no internet required)
+- **Export** to JSON, SVG, and PNG (with the selected theme's colors)
+- **Import** from JSON (to restore a backup)
+- **Full Undo / Redo** support
+- **Run as a desktop app** (Electron) or **in the browser** (localhost)
 
 ---
 
-## 🛠️ اجرای محلی (توسعه)
+## 🖥️ Desktop App
 
-### پیش‌نیازها
+Download the installer from the [Releases](../../releases) page and run it on Windows.
+
+---
+
+## 🛠️ Run Locally (Development)
+
+### Prerequisites
 
 - [Node.js 20+](https://nodejs.org/)
 
-### مراحل
+### Steps
 
 ```bash
-# ۱. کلون پروژه
+# 1. Clone the repository
 git clone https://github.com/YOUR_USERNAME/opensource-xmind.git
 cd opensource-xmind
 
-# ۲. کپی کردن تنظیمات پیش‌فرض
+# 2. Copy default environment config
 copy .env.example .env
 
-# ۳. نصب وابستگی‌ها
+# 3. Install dependencies
 npm install
 
-# ۴. اجرای محیط توسعه (dev server)
+# 4. Start the dev server
 npm run dev
 ```
 
-سپس مرورگر را باز کنید و به آدرس `http://127.0.0.1:5173` بروید.
+Then open your browser at `http://127.0.0.1:5173`.
 
 ---
 
-## 🚀 اجرای نسخه Production در مرورگر
+## 🚀 Run Production Build in Browser
 
 ```bash
 npm run start
 ```
 
-این دستور ابتدا پروژه را Build می‌کند و سپس روی `http://127.0.0.1:4173` سرو می‌کند.
+This builds the project and serves it at `http://127.0.0.1:4173`.
 
 ---
 
-## 📦 ساخت فایل EXE (برای ویندوز)
+## 📦 Build the Windows EXE
 
 ```bash
 npm run electron:build
 ```
 
-فایل نصبی در پوشه `dist_electron/` ساخته می‌شود.
+The installer will be generated in the `dist_electron/` folder.
 
 ---
 
-## ⌨️ میانبرهای صفحه‌کلید
+## ⌨️ Keyboard Shortcuts
 
-| کلید | عملکرد |
-|------|---------|
-| `Tab` | افزودن زیر‌تاپیک |
-| `Enter` | افزودن تاپیک همتا |
-| `Delete` / `Backspace` | حذف تاپیک انتخابی |
+| Key | Action |
+|-----|--------|
+| `Tab` | Add child topic |
+| `Enter` | Add sibling topic |
+| `Delete` / `Backspace` | Delete selected topic |
 | `Ctrl+Z` | Undo |
 | `Ctrl+Y` / `Ctrl+Shift+Z` | Redo |
-| `Ctrl+S` | ذخیره دستی |
-| `Escape` | لغو اتصال یا ویرایش |
-| دابل‌کلیک روی تاپیک | ویرایش متن تاپیک |
-| دابل‌کلیک روی بوم خالی | افزودن تاپیک شناور |
-| `Space` + درگ | جابجایی (Pan) صفحه |
-| اسکرول موس | زوم |
+| `Ctrl+S` | Manual save |
+| `Escape` | Cancel connection or editing |
+| Double-click on topic | Edit topic text |
+| Double-click on empty canvas | Add floating topic |
+| `Space` + Drag | Pan the canvas |
+| Mouse wheel | Zoom in / out |
 
 ---
 
-## 🏗️ معماری
+## 🏗️ Architecture
 
 ```
 src/
 ├── components/
-│   ├── Canvas.tsx      # بوم تعاملی مایند مپ
-│   ├── MapEditor.tsx   # صفحه ویرایشگر
-│   └── MapHome.tsx     # صفحه خانگی (لیست مپ‌ها)
+│   ├── Canvas.tsx      # Interactive mind map canvas
+│   ├── MapEditor.tsx   # Editor screen
+│   └── MapHome.tsx     # Home screen (map list)
 ├── model/
-│   ├── editor.ts       # منطق اصلی (Undo/Redo، اکشن‌ها)
-│   ├── export.ts       # خروجی SVG/PNG با پشتیبانی تم
-│   ├── sample.ts       # مپ نمونه
-│   └── validate.ts     # اعتبارسنجی ایمپورت JSON
-├── db.ts               # IndexedDB (ذخیره‌سازی محلی)
-├── types.ts            # تایپ‌های TypeScript
-└── App.tsx             # مدیریت صفحه‌ها
-main.js                 # فایل اصلی Electron
+│   ├── editor.ts       # Core logic (Undo/Redo, actions)
+│   ├── export.ts       # SVG/PNG export with theme support
+│   ├── sample.ts       # Sample map
+│   └── validate.ts     # JSON import validation
+├── db.ts               # IndexedDB (local storage)
+├── types.ts            # TypeScript types
+└── App.tsx             # Screen management
+main.js                 # Electron main process
 ```
 
-- **React + TypeScript + Vite** — رندر SPA
-- **Electron** — بسته‌بندی به عنوان اپ دسکتاپ
-- **IndexedDB** — ذخیره‌سازی محلی (بدون سرور)
-- **بدون تحلیل‌گر، بدون حساب کاربری، بدون ارسال داده**
+- **React + TypeScript + Vite** — Single-page app rendering
+- **Electron** — Desktop app packaging
+- **IndexedDB** — Local-only storage (no server needed)
+- **No analytics, no accounts, no data sent anywhere**
 
 ---
 
-## 📄 مجوز
+## 📄 License
 
-این پروژه تحت مجوز [MIT](LICENSE) منتشر شده است.
+This project is licensed under the [MIT License](LICENSE).
