@@ -105,8 +105,10 @@ The installer will be generated in the `dist_electron/` folder.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Project Architecture
 
+<details>
+<summary><b>Click to expand full Directory Tree</b></summary>
 ```
 src/
 ├── components/
@@ -123,6 +125,7 @@ src/
 └── App.tsx             # Screen management
 main.js                 # Electron main process
 ```
+</details>
 
 - **React + TypeScript + Vite** — Single-page app rendering
 - **Electron** — Desktop app packaging
