@@ -107,23 +107,27 @@ The installer will be generated in the `dist_electron/` folder.
 
 ## 🏗️ Project Architecture
 
+```text
+opensource-xmind/
+├── src/
+│   ├── components/
+│   │   ├── Canvas.tsx      # Interactive mind map canvas (drag, drop, render)
+│   │   ├── MapEditor.tsx   # Editor screen (toolbar, actions, shortcuts)
+│   │   └── MapHome.tsx     # Home screen (list maps, import/export, themes)
+│   ├── model/
+│   │   ├── editor.ts       # Core logic (Undo/Redo, state reducer, themes)
+│   │   ├── export.ts       # SVG/PNG generation with theme support
+│   │   ├── sample.ts       # Sample map data
+│   │   └── validate.ts     # JSON import validation
+│   ├── db.ts               # IndexedDB wrapper (local storage)
+│   ├── types.ts            # TypeScript interfaces
+│   ├── index.css           # Global styles and theme variables
+│   └── App.tsx             # Main routing and screen management
+├── main.js                 # Electron main process (desktop wrapper)
+├── vite.config.ts          # Vite build configuration
+├── playwright.config.ts    # E2E test configuration
+└── package.json            # Dependencies and build scripts
 ```
-src/
-├── components/
-│   ├── Canvas.tsx      # Interactive mind map canvas
-│   ├── MapEditor.tsx   # Editor screen
-│   └── MapHome.tsx     # Home screen (map list)
-├── model/
-│   ├── editor.ts       # Core logic (Undo/Redo, actions)
-│   ├── export.ts       # SVG/PNG export with theme support
-│   ├── sample.ts       # Sample map
-│   └── validate.ts     # JSON import validation
-├── db.ts               # IndexedDB (local storage)
-├── types.ts            # TypeScript types
-└── App.tsx             # Screen management
-main.js                 # Electron main process
-```
-
 
 - **React + TypeScript + Vite** — Single-page app rendering
 - **Electron** — Desktop app packaging
