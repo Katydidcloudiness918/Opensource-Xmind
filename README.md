@@ -16,6 +16,14 @@
 </div>
 
 ---
+## 📸 Application Previews
+
+| **Default Theme** | **Dark Theme** |
+| :---: | :---: |
+| ![Default Theme](assets/DefaultTheme.png) | ![Dark Theme](assets/DarkTheme.png) |
+| **Ocean Theme** | **Sunset Theme** |
+| ![Ocean Theme](assets/OceanTheme.png) | ![Sunset Theme](assets/SunsetTheme.png) |
+
 
 ## 📥 Download
 
