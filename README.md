@@ -1,5 +1,9 @@
 # Opensource Xmind
 
+<p align="center">
+  <img src="assets/icon.png" width ="300" alt="Arcade Icon">
+</p>
+
 <div align="center">
 
 **A free, open-source mind mapping app inspired by Xmind**
